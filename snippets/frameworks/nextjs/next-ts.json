@@ -1,0 +1,241 @@
+{
+  "Nextjs arrow function export at the end": {
+    "prefix": "nafe",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t${2:Enter}",
+      "\t\t</>",
+      "\t);",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Next Arrow Function ,Export at the end"
+  },
+  "Nextjs arrow function": {
+    "prefix": "naf",
+    "body": [
+      "export default () => {",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t${1:Enter}",
+      "\t\t</>",
+      "\t);",
+      "}"
+    ],
+    "description": "Next Arrow Function"
+  },
+  "Nextjs normal function with export at the end": {
+    "prefix": "nfe",
+    "body": [
+      "function ${1:${TM_FILENAME_BASE}}() {",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t${2:Enter}",
+      "\t\t</>",
+      "\t);",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Next Normal Function ,Export at the end"
+  },
+  "Nextjs normal function": {
+    "prefix": "nf",
+    "body": [
+      "export default function() {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t${1:Enter}",
+      "\t\t</div>",
+      "\t);",
+      "}"
+    ],
+    "description": "Next Normal Function"
+  },
+  // functions with combinations
+
+  "Nextjs typescript arrow function  with getServerSideProps": {
+    "prefix": "ntsfwserver",
+    "body": [
+      "import { GetServerSideProps } from 'next';",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t${2:Enter}",
+      "\t\t</div>",
+      "\t);",
+      "}",
+      "",
+      "",
+      "export const getServerSideProps:GetServerSideProps = async (${3:ctx}) => {",
+      "",
+      "",
+      "\treturn {",
+      "\t\tprops:{",
+      "\t\t\t${4:data:null}",
+      "\t\t}",
+      "\t}",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "initializing page(arrow function) with getServerSideProps"
+  },
+  "Nextjs typescript arrow function with getStaticProps": {
+    "prefix": "ntsfwstatic",
+    "body": [
+      "import {GetStaticProps} from 'next';",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t${2:Enter}",
+      "\t\t</div>",
+      "\t);",
+      "}",
+      "",
+      "export const getStaticProps:GetStaticProps = async (${3:ctx}) => {",
+      "",
+      "",
+      "\treturn {",
+      "\t\tprops:{",
+      "\t\t\t${4:data:null}",
+      "\t\t}",
+      "\t}",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "initializing page(arrow function) with getStaticProps"
+  },
+  // static generation
+  "Nextjs static generation": {
+    "prefix": "!!tsstatic",
+    "body": [
+      "import {GetStaticPaths,GetStaticProps} from 'next';",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t${2:Enter}",
+      "\t\t</div>",
+      "\t);",
+      "}",
+      "",
+      "export const getStaticPaths:GetStaticPaths = async () => {",
+      "",
+      "",
+      "\treturn {",
+      "\t\tpaths:${3:[]},",
+      "\t\tfallback:${4:false}",
+      "\t}",
+      "}",
+      "export const getStaticProps:GetStaticProps = async (${5:ctx}) => {",
+      "",
+      "",
+      "\treturn {",
+      "\t\tprops:{",
+      "\t\t\t${6:data:null}",
+      "\t\t}",
+      "\t}",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ]
+  },
+
+  // import next components
+  "Nextjs import for Link component": {
+    "prefix": "nil",
+    "body": ["import ${1:Link} from 'next/link';"],
+    "description": "next import Link"
+  },
+  "Nextjs import for Router(default) component": {
+    "prefix": "nir",
+    "body": ["import ${1:Router} from 'next/router';"],
+    "description": "next import Router(default)"
+  },
+  "Nextjs import for useRouter component": {
+    "prefix": "niur",
+    "body": ["import {useRouter} from 'next/router';"],
+    "description": "next import useRouter"
+  },
+  "Nextjs import for Head component": {
+    "prefix": "nih",
+    "body": ["import ${1:Head} from 'next/head';"],
+    "description": "next import Head"
+  },
+  "Nextjs import for Image component": {
+    "prefix": "nii",
+    "body": ["import ${1:Image} from 'next/image';"],
+    "description": "next import Image"
+  },
+  "Nextjs import for Dynamic": {
+    "prefix": "nid",
+    "body": ["import ${1:dynamic} from 'next/dynamic';"],
+    "description": "next import dynamic"
+  },
+
+  // api routes
+  "Nextjs Api route": {
+    "prefix": "ntsapi",
+    "body": [
+      "import { NextApiRequest, NextApiResponse } from 'next';",
+      "",
+      "export default (${1:req}:NextApiRequest, ${2:res}:NextApiResponse) => {",
+      "",
+      "\t${3:req.statusCode = 200}",
+      "",
+      "",
+      "}"
+    ],
+    "description": "Next Api Route"
+  },
+
+  // custom app
+  "Nextjs typescript custom app (_app.js)": {
+    "prefix": "ntscapp",
+    "body": [
+      "import {AppProps} from 'next/app'",
+      "",
+      "const MyApp = ({ Component, pageProps }:AppProps) => {",
+      "\treturn <Component {...pageProps} />",
+      "}",
+      "",
+      "export default MyApp;"
+    ],
+    "description": "Next Custom App (_app.js)"
+  },
+  "Nextjs typescript Custom Document (_document.js)": {
+    "prefix": "ntscdocument",
+    "body": [
+      "import Document, { Html, Head, Main, NextScript } from 'next/document'",
+      "",
+      "class MyDocument extends Document {",
+      "\tstatic async getInitialProps(ctx) {",
+      "\t\tconst initialProps = await Document.getInitialProps(ctx)",
+      "\t\treturn { ...initialProps }",
+      "}",
+      "",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<Html>",
+      "\t\t\t\t<Head/>",
+      "\t\t\t\t<body>",
+      "\t\t\t\t\t<Main />",
+      "\t\t\t\t\t<NextScript />",
+      "\t\t\t\t</body>",
+      "\t\t\t</Html>",
+      "\t\t)",
+      "\t}",
+      "}",
+      "",
+      "export default MyDocument;"
+    ],
+    "description": "Next Typescript Custom Document (_document.js)"
+  }
+}

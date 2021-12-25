@@ -186,6 +186,10 @@
         "path": "./snippets/javascript/react-ts.json"
       },
       {
+        "language": "nextjs",
+        "path": "./snippets/frameworks/nextjs/next-ts.json"
+      },
+      {
         "language": "vue",
         "path": "./snippets/frameworks/vue/html.json"
       },
