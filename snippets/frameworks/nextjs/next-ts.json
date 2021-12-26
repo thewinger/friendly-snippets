@@ -1,4 +1,18 @@
 {
+  "React functional component": {
+    "prefix": "rfcp",
+    "body": [
+      "type ${TM_FILENAME_BASE}Props = {${1:propertyTypes}}",
+      "",
+      "export default function ${TM_FILENAME_BASE}({ properties }: ${TM_FILENAME_BASE}Props): JSX.Element {",
+      "\treturn (",
+      "\t\t<div>$0</div>",
+      "\t)",
+      "}",
+      ""
+    ],
+    "description": "React functional component"
+  },
   "Nextjs arrow function export at the end": {
     "prefix": "nafe",
     "body": [
